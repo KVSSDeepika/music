@@ -40,7 +40,7 @@ function highlightCurrent() {
     });
 }
 
-
+img.classList.remove("rotate");
 play.addEventListener("click", function (event) {
     
     if (audio.paused) {
