@@ -105,3 +105,16 @@ volumedown.addEventListener("click",function(event)
     if(audio.volume<0)
         audio.volume=0;
 });
+audio.addEventListener("ended", function () {
+    currentIndex++;
+    if (currentIndex >= audios.length) {
+        currentIndex = 0;
+    }
+    audio.src = audios[currentIndex];
+    img.src = imgUrl[currentIndex];
+    Track.textContent = Tracks[currentIndex];
+    audio.play();
+    play.innerHTML = '<i class="bi bi-pause-fill"></i>';
+    img.classList.add("rotate");
+    highlightCurrent()
+});
