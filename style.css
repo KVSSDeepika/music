@@ -1,12 +1,4 @@
-.container
-{
-    padding-top: 50px;
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    height:100vh;
 
-}
 body{
     background-color: rgb(158, 134, 134);
 }
@@ -23,19 +15,7 @@ body{
 .hl{
     color:rgb(35, 91, 155);
 }
-.card
-{
-    
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    padding:20px;
-    border-radius: 15px;
-    box-shadow:0px 4px 8px rgb(26, 14, 14);
-    background-color: rgb(220, 177, 237);
-    color: brown;
 
-}
 .img{
     width:170px;
     height:170px;
@@ -54,17 +34,7 @@ body{
     padding: 2px;
     
 }
-.list
-{
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    padding:50px;
-    border-radius: 15px;
-    box-shadow:0px 4px 8px rgb(26, 14, 14);
-    background-color: rgb(220, 177, 237);
-    color: rgb(14, 14, 14);
-}
+
 @keyframes rotate360 {
     from {
         transform: rotate(0deg);
@@ -76,10 +46,37 @@ body{
 .rotate {
     animation: rotate360 4s linear infinite;
 }
-.containerl{
-    display:flex;
+
+.container {
+    padding-top: 50px;
+    display: flex;
     flex-direction: column;
     align-items: center;
-    height:100vh;
+    height: auto; 
+}
+.containerl {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto; 
+}
+.k{
+    background-color: transparent;
+}
+.card,
+.list {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgb(26, 14, 14);
+    background-color: rgb(206, 150, 218);
+    color: brown;
+}
 
+#audio {
+    width: 100%;
 }
